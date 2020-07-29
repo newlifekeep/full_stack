@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    div {width:200px;height:200px;background:#CCC;float:left;margin:10px}
+  </style>
+  <script>
+  window.onload = ()=>{
+    let divlistArrayLike = document.getElementsByTagName("div");
+    console.log(typeof divlistArrayLike);
+  //  divlistArrayLike.forEach(div => console.log(div))
+     //The Array.from() static method creates a new, shallow-copied Array instance from an array-like or iterable object.
+
+    let divArray = Array.from(divlistArrayLike);
+
+    // divlist[0].style.backgroundColor="red"
+     divArray.map(div=> div.style.backgroundColor="red");
+  }
+
+  </script>
+</head>
+
+<body>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+</body>
+
+</html>

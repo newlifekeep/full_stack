@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    div {width:200px;height:200px;background:#CCC;float:left;margin:10px}
+  </style>
+  <script>
+
+function show(){
+  alert(`this is : ${this}`)
+}
+//The bind() method creates a new function that, when called, has its this keyword set to the provided value,
+// with a given sequence of arguments preceding any provided when the new function is called.
+// document.onclick= show
+
+// setTimeout(show, 10);
+
+
+let arr =[1,2,2]
+//arr.a = show
+
+// arr.a()
+
+const show2 = ()=>{
+  alert('in arrow function :'+ this)
+}
+
+ function ss(){
+   let a1=0;
+   show2()
+ }
+
+ function ff(){
+   ss()
+ }
+document.onclick= show2
+
+arr.a = show2
+arr.a()
+//ff()
+ //ff()
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+</body>
+
+</html>

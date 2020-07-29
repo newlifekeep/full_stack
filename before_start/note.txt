@@ -1,0 +1,33 @@
+tool :
+1: version control tools
+svn
+git  - clone add/commit/push pull
+
+2 write
+markdown
+
+title  -- # ## ###
+list  -，
+strong  **XX**
+
+3: compile and
+ES6  ES5 babel
+
+WebPack is the main tools
+
+-------
+what is the core meaning full stack
+
+
+4: course content
+
+1: basic knowledge ES5
+2: mobile develop  library
+3: images: canvas SVG/VML Rapheal, d3, echarts, WebGL
+4: game develop: open eyes views  all the game  is the most difficult
+5: backend  Node express KOA, Crawler
+6: tools
+7：hybrid development
+8: wechat : official account operation and  applets in wechat
+9: angular ,vue, react
+10: data structure algorithm, design pattern

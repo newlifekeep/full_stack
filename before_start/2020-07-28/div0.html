@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    div {width:200px;height:200px;background:#CCC;float:left;margin:10px}
+  </style>
+  <script>
+  // function Person(name,age){
+  //   this.name = name;
+  //   this.age =age;
+  // }
+  //
+  //  Person.prototype.showName = function (){
+  //    alert(`myname is ${this.name}`)
+  //  }
+  //
+  //
+  //  let p = new Person("zgding",42);
+
+  class Person2{
+    constructor(name,age){
+      alert(this)
+      this.name=name;
+      this.age =age;
+    }
+    showName(){
+      // alert(`wo jiao ${this.name}`);
+      alert('woshi'+ this.name);
+    }
+  }
+
+  let p2 = new Person2('dz11g',42);
+
+  // document.onclick = p2.showName;
+  // after  assigment , this in the showName is reference the document object;
+  document.onclick = p2.showName.bind(p2);
+
+   // document.onclick = p2.showName();
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+</body>
+
+</html>

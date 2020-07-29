@@ -1,0 +1,57 @@
+ES6:
+EMCAScript(ECMA,ES) standard
+
+---
+ES6 new feature
+
+1: variable / assignment
+  var :
+  can be repeat definition
+  can not limit modification
+  just function level scope
+
+  let:  block scope
+  const: constant variable  block scope
+
+  1: can not repeat definition,
+
+
+
+2: function
+
+3: array/json
+json :  if name and value is same
+
+map : one vs one
+reduce
+filter
+forEach
+
+4: string
+''
+""
+``  can fold
+startsWith()
+endsWith()
+
+
+5:OOP
+class/ constructor extends super bind
+standard
+performance improve
+
+this:
+normal function :  according to  who call me ?  this change
+arrow function:  : according to the environment of the context where the arrow function is?  this no change
+
+
+6: Promise
+
+7: generator
+
+- async/ await
+
+8: module  ES6  babel  browserify webpack
+
+ajax/json websocket 
+ES6 -> ES5

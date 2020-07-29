@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    window.onload = function() {
+      let aBtn = document.getElementsByTagName('input');
+
+      // for(var i=0;i<aBtn.length;i++){
+      //
+      //   // aBtn[i].onclick = function(){
+      //   //   alert(i);
+      //   // }   //  all output 3    var i = 0  i is function scope   ---1
+      //
+      //   // (function(i){
+      //   //   aBtn[i].onclick = function(){
+      //   //     alert(i);
+      //   //   }
+      //   // })(i)   use a function then make the i limit as this function    --2
+      //
+      //
+      // }
+ 
+      for (let i=0;i< aBtn.length;i++)
+      {
+         aBtn[i].onclick= function(){
+           alert(i);
+           // use let then i is block scope then in for {} block , i is isolate.
+         }
+      }
+
+    }
+
+  </script>
+</head>
+
+<body>
+  <input type="button" name="" value="1">
+  <input type="button" name="" value="2">
+  <input type="button" name="" value="3">
+</body>
+
+</html>

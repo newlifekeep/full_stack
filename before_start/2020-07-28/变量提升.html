@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+<!--
+js code   代码预解析，变量 预解析 ： 先声明（第一阶段，全部进行声明相关的的工作），后赋值（在第二阶段完成）。
+ -->
+
+  <script>
+  let a= 12;
+
+  function show(){
+
+
+    alert(a);
+
+      a=5;
+  }
+//  ||
+
+  // function show(){
+  //   var a   //第一阶段（时间上）， 提高到顶部（空间上） 代码是从上往下，逐行顺序执行的。
+  //           // 导致 名称遮蔽 name overlay
+  //
+  //   alert(a);
+  //
+  //   a=5;
+  // }
+
+
+  show();
+
+
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

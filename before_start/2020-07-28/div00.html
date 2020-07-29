@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    div {width:200px;height:200px;background:#CCC;float:left;margin:10px}
+  </style>
+  <script>
+function show(){
+  alert(`this is : ${this}`)
+}
+//The bind() method creates a new function that, when called, has its this keyword set to the provided value,
+// with a given sequence of arguments preceding any provided when the new function is called.
+document.onclick= show.bind('abc')
+
+const module ={
+  x:42,
+  getX: function(){
+    return this.x;
+  }
+};
+
+const unboundGetX = module.getX;  // the function gets invoked at the global scope
+console.log(unboundGetX())
+
+const boundGetX = unboundGetX.bind(module);
+
+console.log(boundGetX())   
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+</body>
+
+</html>
