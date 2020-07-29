@@ -53,5 +53,10 @@ arrow function:  : according to the environment of the context where the arrow f
 
 8: module  ES6  babel  browserify webpack
 
-ajax/json websocket 
+ajax/json websocket
 ES6 -> ES5
+
+ES6:
+1：promise   Asynchronous , synchronous
+2: generator
+3: async/await
