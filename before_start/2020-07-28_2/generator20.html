@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous">
+  </script>
+
+  <script>
+     function *show(){
+       alert('aa');
+       // let a = yield;
+       //  alert('bb'+a);
+        let a=[1,2,2,2,2,999]
+       // yield {'a':390,'b':9090};
+
+       yield a; 
+
+       alert('bb')
+        return 89;
+     }
+
+    let gen=  show();
+
+    console.log(Object.prototype.toString.call(gen));
+    let res=  gen.next();
+
+      console.log(res);
+    let res2= gen.next();
+
+    console.log(res2);
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+data interactive
+- form
+- ajax    no use fresh  total page,  save internet band;  ajax can cross domain
+- jsonp    security is low
+
+from server side  are all seem as form
+http all data require all are form
+
+- ajax                  one way  cross domain complex
+- WebSocket             rapid two way  cross domain
+performance is good    two way  cross domain natural
+
+------
+cross domain :
+www.baidu.com/a.html  -> www.360.com/1.txt
+
+XSS: lazy  not check
+
+1: 360buy.com  == jd.com ; t.sina.cn == weibo.com
+2: third-party data exchange
+
+--------------
+1. http protocol
+2. native js
+-------------
+
+http 1.0  one time connect
+http 1.1  keep connect  performance improve
+http 2.0   mandatory  https ,  two way  multipath
+https

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+  <script>
+
+    $.ajax({
+      url:'1.txt',
+      dataType:'json'
+    }).then(json=>{alert("ok"); console.log(json)},
+        err=> alert("on ok"))
+
+
+    let p1 = new Promise((resolve,reject)=>{
+
+      $.ajax({
+        url:'1.txt',
+        dataType:'json',
+        success(json){
+          resolve(json);
+        },
+        error(err){
+          reject(err);
+        }
+      })
+      });
+
+      let p2 = new Promise((resolve,reject)=>{
+
+        $.ajax({
+          url:'2.txt',
+          dataType:'json',
+          success(json){
+            resolve(json);
+          },
+          error(err){
+            reject(err);
+          }
+        })
+        });
+
+        let p3 = new Promise((resolve,reject)=>{
+
+          $.ajax({
+            url:'11.txt',
+            dataType:'json',
+            success(json){
+              resolve(json);
+            },
+            error(err){
+              reject(err);
+            }
+          })
+          });
+
+          //
+          // Promise.all([p1,p2,p3]).then(
+          //   json => {alert('all ok');
+          //   console.log(typeof json);
+          //   let [a,b,c] =json;
+          //   console.log(a,b,c);
+          //   // Array.from(json).forEach(x=>console.log(x))
+          //   //  console.log(json);
+          // },
+          //   err => alert('no ok')
+          // )
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="jquery.js" charset="utf-8"></script>
+
+  <script>
+    function sleep(sec){
+      return new Promise((resolve,reject)=>{
+        setTimeout(function(){
+          resolve();
+        },sec*1000);
+      })
+    }
+
+
+      async function show(){
+         alert('a');
+
+         await sleep(2);
+
+         alert('b');
+      }
+
+      show();
+  </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
